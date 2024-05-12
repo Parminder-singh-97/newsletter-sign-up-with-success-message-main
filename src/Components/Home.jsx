@@ -91,7 +91,7 @@ const Home = () => {
                 </form>
           </div>
           <div className="right_side">
-            <img src="/public/images/illustration-sign-up-desktop.svg" alt="" />
+            <img src="/images/illustration-sign-up-desktop.svg" alt="" />
           </div>
 
 
