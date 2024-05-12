@@ -1,0 +1,226 @@
+@font-face {
+  font-family: Roboto ;
+  src: url("/public/fonts/Roboto-Regular.woff");
+}
+@font-face {
+  font-family: bold-Roboto ;
+  src: url("/public/fonts/Roboto-Bold.ttf");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Roboto;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+section {
+  width: 100%;
+  height: 100vh;
+  background-color: rgb(88, 88, 88);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 60%;
+  
+  background-color: white;
+  border-radius: 30px;
+  padding: 30px;
+  display: flex;
+  /* align-items: center; */
+  /* justify-content: space-evenly; */
+}
+
+.left_side{
+    display: flex;
+    gap: 2rem;
+    flex-direction: column;
+    padding-top: 4rem;
+    padding: 2rem;
+    width: 70%;
+    height: 100%;
+}
+
+.left_side h1{
+  font-size: 4vw;
+  font-weight: 800;
+  color: rgb(0, 0, 0);
+}
+.left_side ul li {
+    list-style: none;
+    display: flex;
+    align-items: center;
+   
+    gap: 15px;
+    margin-bottom: 10px;
+}
+
+
+.email_bar input {
+  width: 90%;
+  border-radius: 10px;
+  padding-left: 10px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  font-size: 1.2rem;
+  height: 50px;
+  border: 2px solid rgba(0, 0, 0, 0.34);
+}
+.email_bar input::placeholder{
+  padding-left: 10px;
+  font-size: 1.2rem;
+
+
+}
+.email_bar label{
+  font-size: 12px;
+  font-weight: 800;
+  color: rgb(0, 0, 0);
+}
+
+.btn_black{
+  background-color: black;
+  color: white;
+  width: 90%;
+  border: none;
+  outline: none;
+  padding: 18px 2px ;
+  border-radius: 10px;
+  font-size: 16px;
+  font-family: Roboto;
+  cursor: pointer;
+  transition: all 0.2s linear;
+}
+.btn_black:hover {
+  background-color: hsl(4, 100%, 67%);
+  box-shadow: 1px 2px 14px 0px rgba(0,0,0,0.75);
+}
+
+
+
+.right_side{
+    width: 50%;
+   
+    display: flex;
+    align-items: center;
+    justify-content: end;
+
+
+}
+.right_side img{
+
+
+  width: 100%;
+  height: 100%;
+  
+
+}
+
+
+/* sucess pageee-------------------------- */
+
+.sucess_container {
+  background-color: white;
+  padding: 40px;
+  width: 470px;
+  height: 470px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 40px;
+}
+.sucess_container img{
+
+  width: 70px;
+}
+.sucess_container h1 {
+  padding-top: 30px;
+  font-family: bold-Roboto;
+  font-weight: 700;
+  font-size: 48px;
+}
+.sucess_container p{
+  padding: 27px 0px;
+}
+
+
+@media screen and (max-width: 1040px) {
+
+  .container {
+    height: 85vh;
+    width: 80%;
+   
+}
+  
+}
+@media screen and (max-width:780px)  {
+
+  .container {
+    height: 90vh;
+    width: 80%;
+}
+.right_side img {
+  object-fit: cover;
+ 
+}
+
+
+}
+
+@media screen and (max-width:490px){
+  .container {
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    
+} 
+
+section {
+  width: 100%;
+  height: auto;
+  background-color: rgb(88, 88, 88);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.left_side {
+  order: 2;
+  width: 100%;
+  height: 100%;
+  padding: 1rem;
+}
+.right_side{
+  background: url(/public/images/illustration-sign-up-mobile.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+}
+
+.left_side h1 {
+  font-size: 8vw;
+  
+}
+.sucess_container {
+  background-color: white;
+  padding: 15px;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  border-radius: 0px;
+ 
+}
+}
