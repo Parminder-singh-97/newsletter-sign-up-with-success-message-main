@@ -15,7 +15,7 @@ const Sucess = () => {
     <>
       <section className="sucess">
         <div className="sucess_container">
-          <img src="/public/images/icon-success.svg" alt="" />
+          <img src="/images/icon-success.svg" alt="" />
           <h1>Thanks For Subscribing!</h1>
           <p>
             A Confirmation email has been send to <strong>{email}</strong>{" "}
